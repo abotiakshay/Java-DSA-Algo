@@ -83,12 +83,16 @@ public class create {
 
     static Node mirror(Node root)
     {
-         
+       
 
        if(root==null)
        {
         return null;
        }
+
+
+
+
 
        Node newnode=new Node(root.data);
        newnode.left=mirror(root.left);
@@ -112,6 +116,9 @@ public class create {
 
         reverse(root.left);
         reverse(root.right);
+    }
+    static void clear(Node root){
+
     }
 
 
